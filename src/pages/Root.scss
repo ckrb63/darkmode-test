@@ -19,16 +19,16 @@ body {
   }
   .dark {
     transition: 0.5s;
-    background-color: #121212;
-    color: #ececec;
+    background-color: #202124;
+    color: #ffffff;
     button {
       background-color: white;
       color: #212529;
       transition: 0.15s ease-in-out;
       box-shadow: 0px 2px 9px rgba(255, 255, 255, 0.3);
       &:hover {
-        background-color: #121212;
-        color: #ececec;
+        background-color: #202124;
+        color: #ffffff;
       }
     }
   }
