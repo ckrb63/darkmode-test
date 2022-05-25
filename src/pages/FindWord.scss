@@ -1,0 +1,59 @@
+@import "./Root.scss";
+@import "./mixin";
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.padding-wrapper {
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.findword {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &-question {
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 1s;
+  }
+  &-text {
+    padding: 0 30px;
+    width: 80%;
+    &-p {
+      font-size: 18px;
+    }
+  }
+  &-answer {
+    margin-top: 30px;
+    &-input {
+      width: 150px;
+      height: 30px;
+      border: 1px solid #b3b3b3;
+      border-radius: 5px;
+      text-align: center;
+    }
+    &-next {
+      margin-left: 10px;
+      width: 70px;
+      height: 34px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+      text-align: center;
+    }
+  }
+}
+
+@include desktop {
+  .findword {
+  }
+}

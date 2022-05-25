@@ -1,0 +1,39 @@
+$bg: white;
+$text: #212529;
+$hover: rgb(206, 206, 206);
+
+body {
+  .light {
+    background-color: white;
+    color: #212529;
+    transition: 0.5s;
+    button {
+      background-color: #121212;
+      color: #ececec;
+      transition: 0.15s ease-in-out;
+      &:hover {
+        background-color: white;
+        color: #212529;
+      }
+    }
+  }
+  .dark {
+    transition: 0.5s;
+    background-color: #121212;
+    color: #ececec;
+    button {
+      background-color: white;
+      color: #212529;
+      transition: 0.15s ease-in-out;
+      box-shadow: 0px 2px 9px rgba(255, 255, 255, 0.3);
+      &:hover {
+        background-color: #121212;
+        color: #ececec;
+      }
+    }
+  }
+}
+
+.icon {
+  width: 40px;
+}
