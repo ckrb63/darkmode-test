@@ -1,0 +1,43 @@
+.statics {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &-dark {
+    &-title {
+      font-size: 30px;
+    }
+    width: 80vw;
+    height: 25vh;
+    background-color: #202124;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 14px;
+    &-wrapper {
+      display: flex;
+      margin: 10px;
+      justify-content: space-between;
+    }
+  }
+  &-light {
+    &-title {
+      font-size: 30px;
+    }
+    width: 80vw;
+    height: 25vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 14px;
+    &-wrapper {
+      display: flex;
+      margin: 10px;
+      justify-content: space-between;
+    }
+  }
+}

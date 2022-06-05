@@ -1,29 +1,21 @@
 @import "./Root.scss";
 @import "./mixin";
 
-.flex-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.padding-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.findword {
-  width: 100vw;
+.catchword {
   height: 100vh;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  &-question {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
   &-start {
     width: 70px;
     height: 34px;
@@ -31,25 +23,41 @@
     text-align: center;
     box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.3);
     border: none;
+    background-color: #000000;
+    color: white;
     cursor: pointer;
   }
-  &-text {
-    padding: 0 30px;
-    width: 80%;
-    &-p {
-      height: 50vh;
-      overflow: scroll;
-      font-size: 18px;
+  &-background {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.black {
+      background-color: #000000;
+    }
+  }
+  &-word {
+    opacity: 0;
+    &.black {
+      color: white;
+    }
+    &.flash {
+      animation: flash 1s;
     }
   }
   &-answer {
-    margin-top: 30px;
+    margin-top: 15px;
+    margin-bottom: 300px;
     &-input {
       width: 150px;
       height: 30px;
       border: 1px solid #b3b3b3;
       border-radius: 5px;
       text-align: center;
+      // &.invalid {
+      //   border: 1px solid red;
+      // }
     }
     &-next {
       margin-left: 10px;
@@ -59,10 +67,5 @@
       border-radius: 5px;
       text-align: center;
     }
-  }
-}
-
-@include desktop {
-  .findword {
   }
 }
