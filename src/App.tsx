@@ -16,7 +16,7 @@ function App() {
         <Route path='/find-word' element={<FindWord />} />
         <Route path='/catch-word' element={<CatchWord />} />
         <Route path='/select-mode' element={<SelectMode />} />
-        <Route path='/statics/' element={<Statics />} />
+        <Route path='/statics' element={<Statics />} />
       </Routes>
     </BrowserRouter>
   );
