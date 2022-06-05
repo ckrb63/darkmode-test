@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/darkmode-test/static/css/main.ca082430.css",
-    "main.js": "/darkmode-test/static/js/main.6f725b15.js",
+    "main.js": "/darkmode-test/static/js/main.35796a3d.js",
     "static/js/787.59e57e67.chunk.js": "/darkmode-test/static/js/787.59e57e67.chunk.js",
     "index.html": "/darkmode-test/index.html",
     "main.ca082430.css.map": "/darkmode-test/static/css/main.ca082430.css.map",
-    "main.6f725b15.js.map": "/darkmode-test/static/js/main.6f725b15.js.map",
+    "main.35796a3d.js.map": "/darkmode-test/static/js/main.35796a3d.js.map",
     "787.59e57e67.chunk.js.map": "/darkmode-test/static/js/787.59e57e67.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca082430.css",
-    "static/js/main.6f725b15.js"
+    "static/js/main.35796a3d.js"
   ]
 }
